@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import TicTacToeClassic from './TicTacToeClassic';
 
 function App() {
   return (
@@ -10,24 +11,22 @@ function App() {
             <div className="logo">
               <span className="logo-symbol">*</span> KAVIA AI
             </div>
-            <button className="btn">Template Button</button>
+            <a
+              className="btn"
+              href="https://react.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
+              React Docs
+            </a>
           </div>
         </div>
       </nav>
 
       <main>
-        <div className="container">
-          <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
-            
-            <h1 className="title">main_container_for_tictactoe_classic</h1>
-            
-            <div className="description">
-              Start building your application.
-            </div>
-            
-            <button className="btn btn-large">Button</button>
-          </div>
+        <div className="container" style={{ minHeight: '60vh', paddingTop: 120 }}>
+          <TicTacToeClassic />
         </div>
       </main>
     </div>
